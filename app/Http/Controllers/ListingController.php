@@ -8,14 +8,14 @@ use Illuminate\Http\Request;
 class ListingController extends Controller
 {
     public function index() {
-      return view('listings', [
+      return view('listings.index', [
         'heading' => 'Latest Listings',
         'listings' => Listing::all()
       ]);
     }
 
     public function show(Listing $listing) {
-      return view('listing', [
+      return view('listing.show', [
         'listing' => $listing
       ]);
     }
