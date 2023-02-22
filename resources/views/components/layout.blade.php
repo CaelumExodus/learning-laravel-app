@@ -34,12 +34,12 @@
     /></a>
   <ul class="flex space-x-6 mr-6 text-lg">
     <li>
-      <a href="register.html" class="hover:text-laravel"
+      <a href="/register" class="hover:text-laravel"
       ><i class="fa-solid fa-user-plus"></i> Register</a
       >
     </li>
     <li>
-      <a href="login.html" class="hover:text-laravel"
+      <a href="/login" class="hover:text-laravel"
       ><i class="fa-solid fa-arrow-right-to-bracket"></i>
         Login</a
       >
@@ -59,7 +59,7 @@
       bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center
     "
 >
-  <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+  <p class="ml-2">Copyright &copy; 2023, All Rights reserved</p>
 
   <a
     href="/listings/create"

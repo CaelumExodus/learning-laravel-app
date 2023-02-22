@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Listing;
 
@@ -15,10 +16,10 @@ use App\Models\Listing;
 |
 */
 
-// All listings
+// All Listings
 Route::get('/', [ListingController::class, 'index']);
 
-//Show create form
+//Show Create Form
 Route::get('/listings/create', [ListingController::class, 'create']);
 
 // Store Listings Data
@@ -35,3 +36,9 @@ Route::delete('/listings/{listing}', [ListingController::class, 'delete']);
 
 // Single Listing
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
+
+// Show Register/Create Form
+Route::get('/register', [UserController::class, 'create']);
+
+// Create New User
+Route::post('/users', [UserController::class, 'store']);
