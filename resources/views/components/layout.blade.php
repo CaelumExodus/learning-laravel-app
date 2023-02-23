@@ -34,17 +34,17 @@
     /></a>
   <ul class="flex space-x-6 mr-6 text-lg">
     @auth
-    <li>
+      <li>
      <span class="font-bold uppercase">
        Welcome {{auth()->user()->name}}
      </span>
-    </li>
-    <li>
-      <a href="/login" class="hover:text-laravel"
-      ><i class="fa-solid fa-gear"></i>
-        Manage Listings
-      </a>
-    </li>
+      </li>
+      <li>
+        <a href="/listings/manage" class="hover:text-laravel"
+        ><i class="fa-solid fa-gear"></i>
+          Manage Listings
+        </a>
+      </li>
       <li>
         <form method="POST" action="/logout" class="inline">
           @csrf
@@ -55,17 +55,17 @@
         </form>
       </li>
     @else
-    <li>
-      <a href="/register" class="hover:text-laravel"
-      ><i class="fa-solid fa-user-plus"></i> Register
-      </a>
-    </li>
-    <li>
-      <a href="/login" class="hover:text-laravel"
-      ><i class="fa-solid fa-arrow-right-to-bracket"></i>
-        Login
-      </a>
-    </li>
+      <li>
+        <a href="/register" class="hover:text-laravel"
+        ><i class="fa-solid fa-user-plus"></i> Register
+        </a>
+      </li>
+      <li>
+        <a href="/login" class="hover:text-laravel"
+        ><i class="fa-solid fa-arrow-right-to-bracket"></i>
+          Login
+        </a>
+      </li>
     @endauth
   </ul>
 </nav>
@@ -91,6 +91,6 @@
   >
 </footer>
 
-  <x-flash-message></x-flash-message>
+<x-flash-message></x-flash-message>
 </body>
 </html>
