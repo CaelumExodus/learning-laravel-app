@@ -10,6 +10,9 @@
       <div
         class="flex flex-col items-center justify-center text-center"
       >
+        <div class="text-lg mt-2 w-full text-left">
+          <i class="fa-regular fa-address-card"></i> {{$listing->user->name}}
+        </div>
         <img
           class="w-48 mr-6 mb-6"
           src="{{$listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png')}}"
@@ -21,12 +24,10 @@
 
         <x-listing-tag :tagsCsv="$listing->tags"></x-listing-tag>
 
-        <div class="text-lg my-4">
-          <i class="fa-solid fa-location-dot"></i> {{$listing->location}}
+        <div class="text-lg mt-4 ">
+          <i class="fa-solid fa-location-dot m-0"></i> {{$listing->location}}
         </div>
-        <div class="text-md">
-          Posted by: {{$listing->user->name}}
-        </div>
+
         <div class="border border-gray-200 w-full mb-6"></div>
         <div>
           <h3 class="text-3xl font-bold mb-4">
