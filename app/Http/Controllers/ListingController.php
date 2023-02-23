@@ -49,6 +49,8 @@ class ListingController extends Controller
         ->store('logos', 'public');
     }
 
+    $formFields['user_id'] = auth()->id();
+
       Listing::create($formFields);
 
 
