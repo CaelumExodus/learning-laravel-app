@@ -28,7 +28,7 @@
           <i class="fa-solid fa-location-dot m-0"></i> {{$listing->location}}
         </div>
 
-        <div class="border border-gray-200 w-full mb-6"></div>
+        <div class="border border-gray-200 w-full mb-6 mt-4"></div>
         <div>
           <h3 class="text-3xl font-bold mb-4">
             Job Description
